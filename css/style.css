@@ -1,0 +1,302 @@
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Small Screens الشاشات الصغيرة */  
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium Screens شاشات متوسطة */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large Screens شاشات كبيرة */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+:root {
+    --font-size: 30px;
+    --margin-bottom: 20px;
+    --color:rgb(7, 4, 57);
+}
+/* Start Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+.header .logo {
+    width: 120px;
+}
+.header .links ul {
+    display: flex;
+}
+.header .links ul a {
+    font-size: 20px;
+    margin-left: 20px;
+    transition: .5s linear;
+    color: rgb(7, 4, 57);
+}
+.header .links ul a:hover {
+    color: rgb(48, 101, 248);
+}
+
+section {
+    padding: 70px 0;
+}
+/* End Header */
+
+
+
+/* Start Features */
+.Features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Features img {
+    width: 500px;
+}
+.Features .content {
+    width: 500px;
+}
+.Features .content h1 {
+    font-size: var(--font-size);
+    margin-bottom: var(--margin-bottom);
+    line-height: 1.5;
+    color: var(--color);
+}
+.Features .content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: rgb(7, 4, 57);
+}
+.Features .content input {
+    margin-right: 20px;
+    width: 270px;
+    padding: 8px;
+    outline: none;
+}
+.Features .content input::placeholder {
+    color: rgb(191, 191, 191);
+}
+.Features .content .btn {
+    width: 150px;
+    padding: 10px 15px;
+    background-color: rgb(48, 101, 248);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: .5s linear;
+}
+.Features .content .btn:hover {
+    opacity: 0.8;
+}
+/* End Features */
+
+
+
+/* Start Team */
+.Team {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aqua;
+}
+.Team .content {
+    width: 560px;
+    padding: 15px;
+}
+.Team .content h1 {
+    font-size: var(--font-size);
+    margin-bottom: var(--margin-bottom);
+    color: var(--color);
+}
+.Team .content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: rgb(7, 4, 57);
+}
+.Team .content a {
+    color: rgb(60, 159, 143);
+    position: relative;
+}
+.Team .content a::before {
+    content: "";
+    width: 176px;
+    height: 2px;
+    background-color: rgb(60, 159, 143);
+    position: absolute;
+    top: 95%;
+}
+.Team .content i {
+    margin-left: 10px;
+}
+.Team .info {
+    width: 368px;
+    background-color: white;
+    margin-top: 35px;
+    padding: 20px;
+}
+.Team .info i {
+    color: rgb(7, 4, 57);
+    margin-left: 1px;
+}
+.info .profile {
+    display: flex;
+    align-items: center;
+}
+.info .profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .profile h3 {
+    font-size: 12px;
+    margin-top: 15px;
+}
+.info .profile p {
+    font-size: 10px;
+    margin-top: 7px;
+}
+.Team .img {
+    width: 500px;
+}
+/* End Team */
+
+
+
+/* Start Sign In */
+.Sign-In {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(88, 89, 137);
+}
+.Sign-In .content {
+    width: 500px;
+}
+.Sign-In .content h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.Sign-In .content p {
+    color: white;
+    line-height: 1.5;
+}
+.Sign-In input {
+    display: block;
+    margin-bottom: 25px;
+    width: 350px;
+    outline: none;
+    padding: 8px;
+}
+.Sign-In input::placeholder {
+    color: rgb(191, 191, 191);
+}
+.Sign-In .btn {
+    width: 180px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(48, 101, 248);
+    color: white;
+    transition: .5s linear;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.Sign-In .btn:hover {
+    opacity: 0.7;
+}
+/* End Sign In */
+
+
+
+/* Start footer */
+.Footer {
+    background-color: rgb(7, 4, 57);
+    padding: 6%;
+    position: relative;
+}
+.Footer img {
+    width: 120px;
+    margin-bottom: 35px;
+}
+.Footer .Footer-content li {
+    margin-bottom: 25px;
+    color: white;
+}
+.Footer ul li i {
+    margin-right: 15px;
+}
+.Footer .Footer-link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    margin: auto;
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    margin-left: 60px;
+}
+.Footer .Footer-link ul li {
+    margin-bottom: 25px;
+}
+.Footer .Footer-link ul li a {
+    color: white;
+    transition: .5s linear;
+}
+.Footer .Footer-link ul li a:hover {
+    color: rgb(48, 101, 248);
+}
+.Footer .social-icons {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 59%;
+    top: 43%;
+}
+.Footer .social-icons a {
+    margin-left: 25px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 30px;
+}
+.Footer .social-icons i {
+    color: white;
+    font-size: 25px;
+    transition: .5s linear;
+}
+.Footer .social-icons i:hover {
+    color: rgb(48, 101, 248);
+}
+/* End footer */
